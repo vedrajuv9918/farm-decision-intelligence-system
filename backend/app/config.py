@@ -7,11 +7,6 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class Settings(BaseSettings):
     app_name: str = "FarmWise"
     openweather_api_key: str = Field(default="", alias="OPENWEATHER_API_KEY")
-    data_gov_api_key: str = Field(default="", alias="DATA_GOV_API_KEY")
-    data_gov_resource_id: str = Field(
-        default="9ef84268-d588-465a-a308-a864a43d0070",
-        alias="DATA_GOV_RESOURCE_ID",
-    )
     data_gov_api_key_current: str = Field(default="", alias="DATA_GOV_API_KEY_CURRENT")
     data_gov_resource_id_current: str = Field(
         default="35985678-0d79-46b4-9ed6-6f13308a1d24",
@@ -23,7 +18,7 @@ class Settings(BaseSettings):
         alias="DATA_GOV_RESOURCE_ID_HISTORICAL",
     )
     database_url: str = Field(
-        default="postgresql+asyncpg://postgres:postgres@localhost:5432/farmwise",
+        default="",
         alias="DATABASE_URL",
     )
     frontend_origin: str = Field(default="http://localhost:5173", alias="FRONTEND_ORIGIN")

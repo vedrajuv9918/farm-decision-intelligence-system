@@ -21,15 +21,15 @@ if not env_loaded:
     load_dotenv()  # Fallback to standard system environment load
     print("[INFO] No local .env file found. Reading system environment variables.")
 
-API_KEY = os.getenv("DATA_GOV_API_KEY") or os.getenv("DATA_GOV_API_KEY_HISTORICAL") or os.getenv("DATA_GOV_API_KEY_CURRENT")
-RESOURCE_ID = os.getenv("DATA_GOV_RESOURCE_ID") or os.getenv("DATA_GOV_RESOURCE_ID_HISTORICAL") or os.getenv("DATA_GOV_RESOURCE_ID_CURRENT")
+API_KEY = os.getenv("DATA_GOV_API_KEY_HISTORICAL") or os.getenv("DATA_GOV_API_KEY_CURRENT")
+RESOURCE_ID = os.getenv("DATA_GOV_RESOURCE_ID_HISTORICAL") or os.getenv("DATA_GOV_RESOURCE_ID_CURRENT")
 
 if not API_KEY:
-    print("[ERROR] DATA_GOV_API_KEY is not defined in the environment or .env file.")
+    print("[ERROR] DATA_GOV_API_KEY_HISTORICAL is not defined in the environment or .env file.")
     sys.exit(1)
 
 if not RESOURCE_ID:
-    print("[ERROR] DATA_GOV_RESOURCE_ID is not defined in the environment or .env file.")
+    print("[ERROR] DATA_GOV_RESOURCE_ID_HISTORICAL is not defined in the environment or .env file.")
     sys.exit(1)
 
 # ==============================================================================
