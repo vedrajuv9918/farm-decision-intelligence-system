@@ -209,6 +209,7 @@ app.add_middleware(
         "http://127.0.0.1:5173",
         "http://localhost:5175",
         "http://127.0.0.1:5175",
+        "https://myfarmwise.vercel.app",
         settings.frontend_origin,
     ],
     allow_credentials=True,
@@ -233,8 +234,8 @@ async def root() -> dict:
         "routes": [
             "GET  /api/health",
             "POST /auth/register",
-            "POST /auth/login",
-            "POST /auth/farm-profile",
+            "POST /api/auth/login",
+            "POST /api/auth/farm-profile",
             "GET  /api/locations",
             "POST /api/crop-decision",
             "POST /api/market-decision",
