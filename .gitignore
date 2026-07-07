@@ -9,3 +9,5 @@ dist/
 .DS_Store
 *.log
 backend/app/ml/*.pkl
+mandi_price/final_dataset.csv
+mandi_price/final_dataset.parquet
