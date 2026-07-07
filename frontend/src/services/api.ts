@@ -59,8 +59,14 @@ export class ApiError extends Error {
 // AXIOS INSTANCE
 // =========================================================
 
+// =========================================================
+// AXIOS INSTANCE
+// =========================================================
+
 const api = axios.create({
-  baseURL: "http://127.0.0.1:8001/api",
+  baseURL:
+    import.meta.env.VITE_API_BASE_URL ||
+    "https://farm-decision-intelligence-system.onrender.com/api",
   timeout: 100000,
 });
 
