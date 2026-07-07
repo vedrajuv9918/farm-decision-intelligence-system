@@ -232,9 +232,9 @@ async def root() -> dict:
         ),
         "routes": [
             "GET  /api/health",
-            "POST /api/auth/register",
-            "POST /api/auth/login",
-            "POST /api/auth/farm-profile",
+            "POST /auth/register",
+            "POST /auth/login",
+            "POST /auth/farm-profile",
             "GET  /api/locations",
             "POST /api/crop-decision",
             "POST /api/market-decision",
