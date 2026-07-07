@@ -1,0 +1,37 @@
+{
+  "testfarmer@example.com": {
+    "full_name": "Test Farmer",
+    "email": "testfarmer@example.com",
+    "password_salt": "273bc8d5a97528e091efa527fccccdd7",
+    "password_hash": "IdLRcYPtBPqSWrHpRQyyEYiOR7c0ojDpDRfY+roJJzE=",
+    "has_farm_profile": false
+  },
+  "vedu7143@gmail.com": {
+    "full_name": "Vedraj U V",
+    "email": "vedu7143@gmail.com",
+    "password_salt": "4a15ee94bb763345814fe9fc95250504",
+    "password_hash": "CN1UjmM63Nv37OyyFfk60bO+QR3uepy5IktkUZpDY90=",
+    "has_farm_profile": true
+  },
+  "a@a.com": {
+    "full_name": "test",
+    "email": "a@a.com",
+    "password_salt": "e8390f7f5bb4c335bb0a6533325a4a23",
+    "password_hash": "5EwSxM2IyGFwTapF3taq4Ja6f0QPsqhWe3CYeaNPcLk=",
+    "has_farm_profile": false
+  },
+  "test@test.com": {
+    "full_name": "test",
+    "email": "test@test.com",
+    "password_salt": "410a171023f372de661b346ce2657095",
+    "password_hash": "ajdPHgXRygAcfgIBp87HqB+YwG4bGvm7A5LEMV+zqFo=",
+    "has_farm_profile": false
+  },
+  "verify@test.com": {
+    "full_name": "Test User",
+    "email": "verify@test.com",
+    "password_salt": "e0eeaf6372b6c55e613116136fec9452",
+    "password_hash": "JZ+wa1mntT2PK7LhkgNhGuFREObSoEd9SIQimqzsqjM=",
+    "has_farm_profile": false
+  }
+}
